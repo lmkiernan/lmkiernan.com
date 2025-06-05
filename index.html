@@ -21,5 +21,24 @@
 </head>
 <body>
   <h1>Hi! I'm Liam,</h1>
+  <div id="cycling-phrases" style="font-size:1.5rem; margin-top: 1rem;"></div>
+  <script>
+    const phrases = [
+      "Backend Developer",
+      "ML Engineer",
+      "Constantly Learning",
+      "Movie Addict",
+      "Data Scientist",
+      "iOS Developer"
+    ];
+    let idx = 0;
+    const el = document.getElementById('cycling-phrases');
+    function showNextPhrase() {
+      el.textContent = phrases[idx];
+      idx = (idx + 1) % phrases.length;
+    }
+    showNextPhrase();
+    setInterval(showNextPhrase, 1000);
+  </script>
 </body>
 </html>
