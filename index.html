@@ -9,11 +9,14 @@
       margin: 0;
     }
     body {
-      display: flex;
-      justify-content: center; /* horizontal centering */
-      align-items: center;     /* vertical centering */
-      font-family: sans-serif;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
     h1 {
       font-size: 3rem;
     }
@@ -24,13 +27,13 @@
   <div id="cycling-phrases" style="font-size:1.5rem; margin-top: 1rem; text-align:center;"></div>
   <script>
     const phrases = [
-      "a Backend Developer",
-      "an ML Engineer",
-      "a Constantly Learning",
-      "a Movie Addict",
-      "a Data Scientist",
-      "an AI Infra Engineer",
-      "an iOS Developer"
+      "a backend dveloper",
+      "an ML engineer",
+      "constantly learning",
+      "a movie addict",
+      "a data scientist",
+      "an AI infra engineer",
+      "an iOS developer"
     ];
     let idx = 0;
     const el = document.getElementById('cycling-phrases');
