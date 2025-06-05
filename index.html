@@ -54,6 +54,27 @@
       margin: 2rem 1rem;
       font-size: 1.3rem;
     }
+    .home-flex {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .home-text {
+      flex: 1;
+    }
+    .home-image {
+      flex: 0 0 auto;
+      margin-left: 2rem;
+      display: flex;
+      align-items: flex-start;
+    }
+    .home-image img {
+      max-width: 220px;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    }
   </style>
 </head>
 <body>
@@ -63,8 +84,15 @@
     <a href="projects.html" class="menu-link">Projects</a>
   </nav>
   <div class="content">
-    <h1>Hi! I'm Liam, and I'm</h1>
-    <div id="cycling-phrases"></div>
+    <div class="home-flex">
+      <div class="home-text">
+        <h1>Hi! I'm Liam, and I'm</h1>
+        <div id="cycling-phrases"></div>
+      </div>
+      <div class="home-image">
+        <img src="assets/images/me.JPG" alt="Liam Kiernan" />
+      </div>
+    </div>
   </div>
   <script>
     const phrases = [
