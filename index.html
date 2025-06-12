@@ -58,8 +58,8 @@
       color: #688ff0;
     }
     .content {
-      margin: 3.5rem 6rem;
-      font-size: 2.5rem;
+      margin: 4vw 8vw;
+      font-size: 2.5vw;
       color: #fffbe9;
     }
     .home-flex {
@@ -67,21 +67,59 @@
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
     .home-text {
-      flex: 1;
+      flex: 1 1 350px;
+      min-width: 280px;
     }
     .home-image {
       flex: 0 0 auto;
-      margin-left: 16rem;
+      margin-left: 8vw;
       display: flex;
       align-items: flex-start;
     }
     .home-image img {
-      max-width: 420px;
+      max-width: 28vw;
+      min-width: 160px;
+      width: 100%;
       height: auto;
       border-radius: 1.8rem;
       box-shadow: 0 4px 24px rgba(0,0,0,0.16);
+    }
+    @media (max-width: 900px) {
+      .content {
+        margin: 3vw 2vw;
+        font-size: 3vw;
+      }
+      .home-flex {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .home-image {
+        margin-left: 0;
+        margin-top: 2vw;
+        justify-content: center;
+        width: 100%;
+      }
+      .home-image img {
+        max-width: 60vw;
+        min-width: 120px;
+      }
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      #cycling-phrases {
+        font-size: 1.2rem;
+      }
+      .content {
+        font-size: 1.1rem;
+      }
+      .home-image img {
+        max-width: 90vw;
+      }
     }
   </style>
 </head>
